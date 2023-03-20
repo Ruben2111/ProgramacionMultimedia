@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BotonCalculadora" parent="Widget.AppCompat.Button">
+        <item name="android:layout_height">match_parent</item>
+        <item name="backgroundTint">@color/gris</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
