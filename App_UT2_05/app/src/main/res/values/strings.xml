@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App_UT2_04</string>
+    <string name="nombre">Nombre de una animal</string>
+
+    <string name="nombreDetalle">Nombre del animal en vista de detalle</string>
+    <string name="descripcion">Descripcion del animal en la vista de detalle</string>
+</resources>
