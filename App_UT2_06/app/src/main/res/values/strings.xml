@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">App_UT2_06</string>
+
+    <string name="reserva">Reserva tus entradas</string>
+    <string name="zoologico">ZOOLOGICO</string>
+    <string name="reptario">REPTARIO</string>
+    <string name="visita_guiada">VISITA GUIADA</string>
+
+    <string name="adultos">Adultos</string>
+    <string name="niños">Niños</string>
+    <string name="precio_total">Total: %s</string>
+    <string name="siguiente">SIGUIENTE</string>
+
+    <string name="tipo_entrada">Tipo de entrada</string>
+    <string name="visita">Visita Guiada</string>
+    <string name="fecha">Fecha Seleccionada</string>
+    <string name="personas">Numero de personas</string>
+    <string name="reservar">RESERVAR</string>
+</resources>

@@ -39,6 +39,30 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="@string/descripcion" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/buttonPositivo"
+                        android:backgroundTint="@color/green"
+                        android:layout_marginLeft="25dp"
+                        android:text="@string/positivo" />
+
+                    <Button
+                        android:id="@+id/buttonNegativo"
+                        android:backgroundTint="@color/red"
+                        android:layout_marginLeft="25dp"
+                        android:text="@string/negativo" />
+                </TableRow>
+
+            </TableLayout>
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
