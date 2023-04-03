@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentInicio">
 
+    <fragment
+        android:id="@+id/fragmentInicio"
+        android:name="com.example.app_ut2_06.FragmentInicio"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_fragmentInicio_to_fragmentPersonas"
+            app:destination="@id/fragmentPersonas" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPersonas"
+        android:name="com.example.app_ut2_06.FragmentPersonas"
+        android:label="Numero de visitantes"
+        tools:layout="@layout/fragment_personas" >
+        <action
+            android:id="@+id/action_fragmentPersonas_to_fragmentFecha"
+            app:destination="@id/fragmentFecha" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFecha"
+        android:name="com.example.app_ut2_06.FragmentFecha"
+        android:label="Fecha de la visita"
+        tools:layout="@layout/fragment_fecha" >
+        <action
+            android:id="@+id/action_fragmentFecha_to_fragmentResumen"
+            app:destination="@id/fragmentResumen" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentResumen"
+        android:name="com.example.app_ut2_06.FragmentResumen"
+        android:label="Resumen"
+        tools:layout="@layout/fragment_resumen" >
+        <action
+            android:id="@+id/action_fragmentResumen_to_fragmentInicio"
+            app:destination="@id/fragmentInicio" />
+    </fragment>
 </navigation>

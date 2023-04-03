@@ -4,10 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Usuarios/DAM211/AndroidStudioProjects/App_UT2_06/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
-        <entry key="..\:/Usuarios/DAM211/AndroidStudioProjects/App_UT2_06/app/src/main/res/layout/fragment_fecha.xml" value="0.36666666666666664" />
+        <entry key="..\:/Usuarios/DAM211/AndroidStudioProjects/App_UT2_06/app/src/main/res/layout/fragment_fecha.xml" value="0.1" />
         <entry key="..\:/Usuarios/DAM211/AndroidStudioProjects/App_UT2_06/app/src/main/res/layout/fragment_inicio.xml" value="0.22" />
-        <entry key="..\:/Usuarios/DAM211/AndroidStudioProjects/App_UT2_06/app/src/main/res/layout/fragment_personas.xml" value="0.36666666666666664" />
-        <entry key="..\:/Usuarios/DAM211/AndroidStudioProjects/App_UT2_06/app/src/main/res/layout/fragment_resumen.xml" value="0.36666666666666664" />
+        <entry key="..\:/Usuarios/DAM211/AndroidStudioProjects/App_UT2_06/app/src/main/res/layout/fragment_personas.xml" value="0.1" />
+        <entry key="..\:/Usuarios/DAM211/AndroidStudioProjects/App_UT2_06/app/src/main/res/layout/fragment_resumen.xml" value="0.1" />
       </map>
     </option>
   </component>
