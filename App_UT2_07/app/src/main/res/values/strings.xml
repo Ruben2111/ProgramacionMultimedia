@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">App_UT2_07</string>
+
+    <string name="nombre">Nombre del producto</string>
 </resources>
