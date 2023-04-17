@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grafico_navegacion"
+    app:startDestination="@id/fragmentListaAnimales">
+
+    <fragment
+        android:id="@+id/fragmentListaAnimales"
+        android:name="es.ivanlorenzo.app_ut3_01.view.FragmentListaAnimales"
+        android:label="fragment_lista_animales"
+        tools:layout="@layout/fragment_lista_animales" >
+        <action
+            android:id="@+id/action_fragmentListaAnimales_to_fragmentDetalleAnimal"
+            app:destination="@id/fragmentDetalleAnimal" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetalleAnimal"
+        android:name="es.ivanlorenzo.app_ut3_01.view.FragmentDetalleAnimal"
+        android:label="fragment_detalle_animal"
+        tools:layout="@layout/fragment_detalle_animal" >
+        <argument android:name="animal"
+            app:argType="es.ivanlorenzo.app_ut3_01.model.Animal" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFavoritos"
+        android:name="es.ivanlorenzo.app_ut3_01.view.FragmentFavoritos"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+</navigation>

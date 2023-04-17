@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">App_UT3_01</string>
+    <string name="add">Añadir elemento</string>
+    <string name="negativo">Voto negativo</string>
+    <string name="positivo">Voto positivo</string>
+    <string name="fragment_favoritos">Lista de animales favoritos</string>
+    <string name="opcion_animales">Animales</string>
+    <string name="opcion_favoritos">Favoritos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/animales"
+        android:icon="@drawable/ic_animal"
+        android:title="@string/opcion_animales" />
+    <item
+        android:id="@+id/favoritos"
+        android:icon="@drawable/ic_favoritos"
+        android:title="@string/opcion_favoritos" />
+</menu>
