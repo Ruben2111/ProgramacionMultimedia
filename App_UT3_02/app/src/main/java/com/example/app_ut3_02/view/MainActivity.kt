@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.app_ut3_02.R
 import com.example.app_ut3_02.databinding.ActivityMainBinding
 import com.example.app_ut3_02.model.Centro
 import com.example.app_ut3_02.viewmodel.CentrosViewModel
@@ -23,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
 
         centrosViewModel.cargarDatos()
+
         centrosViewModel.centrosLiveData.observe(this) { centros ->
             with(binding.recyclerViewCentros) {
                 adapter = CentroAdapter(centros) { centro -> onClickCentro(centro) }
