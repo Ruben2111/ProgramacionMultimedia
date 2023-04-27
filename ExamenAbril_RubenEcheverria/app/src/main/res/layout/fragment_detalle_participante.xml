@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.FragmentDetalleParticipante">
+
+    <ImageView
+        android:id="@+id/imageViewDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:src="@drawable/agoney" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imagenDetalleFav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/ic_favorito" />
+
+        <TextView
+            android:id="@+id/textViewDetalleNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/nombre"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDetalleCan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/cancion" />
+
+        <TextView
+            android:id="@+id/textViewJurado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="@string/jurado" />
+
+        <EditText
+            android:id="@+id/editTextDetalleJurado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/votos_jurado"
+            tools:ignore="Deprecated" />
+
+        <TextView
+            android:id="@+id/textViewDemoscopio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="@string/demoscopio" />
+
+        <SeekBar
+            android:id="@+id/seekBarDetalleDem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:max="40"
+            android:min="16"
+            />
+
+        <TextView
+            android:id="@+id/textViewTelevoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="@string/televoto" />
+
+        <!--
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButton16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dieciseis" />
+
+            <RadioButton
+                android:id="@+id/radioButton20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/veinte" />
+
+            <RadioButton
+                android:id="@+id/radioButton25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/veinticinco" />
+
+            <RadioButton
+                android:id="@+id/radioButton30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/treinta" />
+
+            <RadioButton
+                android:id="@+id/radioButton35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/treintaycinco" />
+
+            <RadioButton
+                android:id="@+id/radioButton40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cuarenta" />
+        </RadioGroup>-->
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

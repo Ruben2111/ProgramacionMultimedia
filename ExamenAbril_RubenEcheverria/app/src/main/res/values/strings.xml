@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ExamenAbril_RubenEcheverria</string>
+    <string name="opcion_interpretes">Interpretes</string>
+    <string name="opcion_favoritos">Favoritos</string>
+
+    <string name="nombre">Nombre del participante</string>
+    <string name="puntos">Puntos</string>
+    <string name="cancion">Nombre de la cancion</string>
+    <string name="jurado">Jurado</string>
+    <string name="votos_jurado">Votos Jurado</string>
+    <string name="demoscopio">Demoscopio</string>
+    <string name="televoto">Televoto</string>
+
+    <string name="dieciseis">16</string>
+    <string name="veinte">20</string>
+    <string name="veinticinco">25</string>
+    <string name="treinta">30</string>
+    <string name="treintaycinco">35</string>
+    <string name="cuarenta">40</string>
+
+    <string name="si">Si</string>
+    <string name="no">No</string>
+
+</resources>
