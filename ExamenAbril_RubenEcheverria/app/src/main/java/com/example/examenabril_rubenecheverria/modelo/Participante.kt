@@ -7,3 +7,5 @@ data class Participante (val nombre:String, val cancion:String,
                          var puntosDemoscopio:Int, var puntosTelevoto:Int,
                          var favorito:Boolean
                          ): Serializable
+
+fun Participante.puntos() = puntosJurado+puntosDemoscopio+puntosTelevoto

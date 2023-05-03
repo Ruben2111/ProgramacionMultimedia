@@ -3,8 +3,10 @@ package com.example.examenabril_rubenecheverria.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.map
 import com.example.examenabril_rubenecheverria.datos.DatosParticipantes
 import com.example.examenabril_rubenecheverria.modelo.Participante
+import com.example.examenabril_rubenecheverria.modelo.puntos
 
 class FestivalViewModel:ViewModel()
 {
@@ -14,9 +16,14 @@ class FestivalViewModel:ViewModel()
     val listaParticipantes: LiveData<List<Participante>> = _listaParticipantes
     val listaFavoritos: LiveData<List<Participante>> = _listaFavoritos
 
-    fun cargarParticipantes()
+    init
     {
         _listaParticipantes.postValue(DatosParticipantes.participantes)
+    }
+
+    fun participantesOrdenados():LiveData<List<Participante>>
+    {
+        return _listaParticipantes.map { it.sortedByDescending {it.puntos()}}
     }
 
     fun cargarFavoritos(){
@@ -31,10 +38,6 @@ class FestivalViewModel:ViewModel()
     }
 
     fun cambiarFavorito(participante:Participante){
-        if(participante.favorito){
-            participante.favorito=false
-        }else{
-            participante.favorito=true
-        }
+        participante.favorito = !participante.favorito
     }
 }

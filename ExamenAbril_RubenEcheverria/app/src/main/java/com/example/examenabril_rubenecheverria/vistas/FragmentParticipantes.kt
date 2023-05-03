@@ -34,7 +34,7 @@ class FragmentParticipantes : Fragment() {
 
         navController = view.findNavController()
 
-        viewModel.listaParticipantes.observe(viewLifecycleOwner){
+        viewModel.participantesOrdenados().observe(viewLifecycleOwner){
             binding.apply {
                 var lista=viewModel.listaParticipantes.value
                 recyclerViewParticipantes.adapter = ParticipanteAdapter(lista){ participante -> onClickParticipante(participante)}
@@ -43,7 +43,7 @@ class FragmentParticipantes : Fragment() {
             }
         }
 
-        viewModel.cargarParticipantes()
+        //viewModel.cargarParticipantes()
     }
 
     private fun onClickParticipante(participante: Participante)

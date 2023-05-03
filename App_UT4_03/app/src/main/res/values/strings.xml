@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">App_UT4_03</string>
+    <string name="peliculas">Peliculas</string>
+    <string name="favoritos">Favoritos</string>
+
+    <string name="lis_pel">Listado de Peliculas</string>
+    <string name="ins_pel">Insertar Pelicula</string>
+    <string name="informa">Informacion</string>
+
+    <string name="mejores">Mejores Peliculas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
