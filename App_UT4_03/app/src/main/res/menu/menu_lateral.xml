@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/menu_lista" android:title="@string/lis_pel"
-        android:icon="@drawable/criticas"/>
-
-    <item android:id="@+id/menu_add" android:title="@string/ins_pel"
-        android:icon="@drawable/ic_puntuacion"/>
-
-    <item android:id="@+id/informacion" android:title="@string/informa"
-        android:icon="@drawable/ic_director"/>
-
+    <item android:id="@+id/listaPelis" android:title="@string/lista_pelis"
+        android:icon="@drawable/ic_imagen"/>
+    <item android:id="@+id/inserPelis" android:title="@string/inser_pelis"
+        android:icon="@drawable/ic_puntuacion" />
+    <item android:id="@+id/info" android:title="@string/infor"
+        android:icon="@drawable/revision"/>
 </menu>
+

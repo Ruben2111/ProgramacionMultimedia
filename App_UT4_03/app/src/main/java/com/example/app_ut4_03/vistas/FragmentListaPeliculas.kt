@@ -9,7 +9,8 @@ import com.example.app_ut4_03.databinding.FragmentListaPeliculasBinding
 
 
 class FragmentListaPeliculas : Fragment() {
-    private lateinit var binding: FragmentListaPeliculasBinding
+
+    private lateinit var binding:FragmentListaPeliculasBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

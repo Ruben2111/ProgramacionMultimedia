@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/grafico_navegacion">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grafico_navegacion"
+    app:startDestination="@id/fragmentListaPeliculas">
 
+    <fragment
+        android:id="@+id/fragmentListaPeliculas"
+        android:name="com.example.app_ut4_03.vistas.FragmentListaPeliculas"
+        android:label="fragment_lista_peliculas"
+        tools:layout="@layout/fragment_lista_peliculas" />
+    <fragment
+        android:id="@+id/fragmentListaFavoritas"
+        android:name="com.example.app_ut4_03.vistas.FragmentListaFavoritas"
+        android:label="fragment_lista_favoritas"
+        tools:layout="@layout/fragment_lista_favoritas" />
+    <fragment
+        android:id="@+id/fragmentNuevaPelicula"
+        android:name="com.example.app_ut4_03.vistas.FragmentNuevaPelicula"
+        android:label="fragment_nueva_pelicula"
+        tools:layout="@layout/fragment_nueva_pelicula" />
+    <fragment
+        android:id="@+id/fragmentDetalle"
+        android:name="com.example.app_ut4_03.vistas.FragmentDetalle"
+        android:label="fragment_detalle"
+        tools:layout="@layout/fragment_detalle" />
 </navigation>

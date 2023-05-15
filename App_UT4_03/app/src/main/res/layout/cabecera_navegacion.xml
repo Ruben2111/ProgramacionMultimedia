@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="200dp">
 
+
     <ImageView
         android:id="@+id/imageview_cabecera"
         android:layout_width="match_parent"
@@ -10,14 +11,17 @@
         android:src="@drawable/peliculas"
         android:scaleType="centerCrop" />
 
+
     <TextView
         android:id="@+id/texview_cabecera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/mejores"
+        android:text="@string/mejor_pelis"
         android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
         android:textStyle="bold"
         android:layout_gravity="bottom"
         android:layout_marginBottom="10dp"
         android:layout_marginStart="10dp" />
+
+
 </FrameLayout>

@@ -9,13 +9,14 @@ import com.example.app_ut4_03.databinding.FragmentDetalleBinding
 
 
 class FragmentDetalle : Fragment() {
-    private lateinit var binding: FragmentDetalleBinding
+
+    private lateinit var binding:FragmentDetalleBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding= FragmentDetalleBinding.inflate(inflater, container, false)
+        binding= FragmentDetalleBinding.inflate(inflater,container,false)
         return binding.root
     }
 }
