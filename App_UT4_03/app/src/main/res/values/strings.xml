@@ -10,6 +10,12 @@
 
     <string name="mejor_pelis">Mejores Peliculas</string>
 
+    <string name="titulo">Titulo de pelicula</string>
+    <string name="anho">Año de Pelicula</string>
+    <string name="director">Director/es</string>
+    <string name="puntos">Puntos de la pelicula</string>
+
+
 
     <string name="num1">1</string>
     <string name="num2">2</string>

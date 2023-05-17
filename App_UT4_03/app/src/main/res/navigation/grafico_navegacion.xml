@@ -9,20 +9,36 @@
         android:id="@+id/fragmentListaPeliculas"
         android:name="com.example.app_ut4_03.vistas.FragmentListaPeliculas"
         android:label="fragment_lista_peliculas"
-        tools:layout="@layout/fragment_lista_peliculas" />
+        tools:layout="@layout/fragment_lista_peliculas" >
+        <action
+            android:id="@+id/action_fragmentListaPeliculas_to_fragmentDetalle"
+            app:destination="@id/fragmentDetalle" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentListaFavoritas"
         android:name="com.example.app_ut4_03.vistas.FragmentListaFavoritas"
         android:label="fragment_lista_favoritas"
-        tools:layout="@layout/fragment_lista_favoritas" />
+        tools:layout="@layout/fragment_lista_favoritas" >
+        <action
+            android:id="@+id/action_fragmentListaFavoritas_to_fragmentDetalle"
+            app:destination="@id/fragmentDetalle" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentNuevaPelicula"
         android:name="com.example.app_ut4_03.vistas.FragmentNuevaPelicula"
         android:label="fragment_nueva_pelicula"
-        tools:layout="@layout/fragment_nueva_pelicula" />
+        tools:layout="@layout/fragment_nueva_pelicula" >
+        <action
+            android:id="@+id/action_fragmentNuevaPelicula_to_fragmentListaPeliculas"
+            app:destination="@id/fragmentListaPeliculas" />
+    </fragment>
+
     <fragment
         android:id="@+id/fragmentDetalle"
         android:name="com.example.app_ut4_03.vistas.FragmentDetalle"
         android:label="fragment_detalle"
-        tools:layout="@layout/fragment_detalle" />
+        tools:layout="@layout/fragment_detalle" >
+        <argument android:name="pelicula"
+            app:argType="com.example.app_ut4_03.modelo.Pelicula" />
+    </fragment>
 </navigation>

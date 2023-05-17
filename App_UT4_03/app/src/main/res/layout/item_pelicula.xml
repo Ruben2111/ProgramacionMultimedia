@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/black"
+    app:cardElevation="20dp"
+    android:layout_margin="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagenListaPelicula"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            app:srcCompat="@drawable/pelicula"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewListaTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="@string/titulo"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imagenListaPelicula"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewListaAnho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/anho"
+            app:layout_constraintStart_toEndOf="@+id/imagenListaPelicula"
+            app:layout_constraintTop_toBottomOf="@id/textViewListaTitulo"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewListaDirector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/director"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imagenListaPelicula"
+            app:layout_constraintTop_toBottomOf="@id/textViewListaAnho"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewListaPuntos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/puntos"
+            app:layout_constraintStart_toEndOf="@+id/imagenListaPelicula"
+            app:layout_constraintTop_toBottomOf="@id/textViewListaDirector"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageViewListaEstrella"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/no_favorito" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
