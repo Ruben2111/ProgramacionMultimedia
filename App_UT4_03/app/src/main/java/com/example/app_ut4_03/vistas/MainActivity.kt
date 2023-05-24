@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 when (it.itemId){
                     R.id.listaPelis->{ navController.navigate(R.id.fragmentListaPeliculas) }
                     R.id.inserPelis->{ navController.navigate(R.id.fragmentNuevaPelicula) }
-                    R.id.info->{ navController.navigate(R.id.fragmentDetalle) }
+                    //R.id.info->{ navController.navigate(R.id.fragmentDetalle) }
                 }
                 drawerLayout.closeDrawer(GravityCompat.START)
                 true

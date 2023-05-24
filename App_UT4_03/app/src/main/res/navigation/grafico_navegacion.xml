@@ -40,5 +40,8 @@
         tools:layout="@layout/fragment_detalle" >
         <argument android:name="pelicula"
             app:argType="com.example.app_ut4_03.modelo.Pelicula" />
+        <action
+            android:id="@+id/action_fragmentDetalle_to_fragmentListaPeliculas"
+            app:destination="@id/fragmentListaPeliculas" />
     </fragment>
 </navigation>

@@ -14,10 +14,11 @@
     <string name="anho">Año de Pelicula</string>
     <string name="director">Director/es</string>
     <string name="puntos">Puntos de la pelicula</string>
+    <string name="url">URL de la imagen de la pelicula</string>
+    <string name="sinopsis">Sinopsis de una pelicula</string>
 
+    <string name="si">Si</string>
+    <string name="no">No</string>
 
-
-    <string name="num1">1</string>
-    <string name="num2">2</string>
-    <string name="num3">3</string>
+    <string name="insertar">Insertar</string>
 </resources>
