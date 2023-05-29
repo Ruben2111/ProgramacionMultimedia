@@ -61,6 +61,11 @@ class FragmentDetalle : Fragment() {
                 addHeader("User-Agent", userAgent)
             }
 
+            imageViewDetalleCriticas.setOnClickListener {
+                val accion= FragmentDetalleDirections.actionFragmentDetalleToFragmentCriticas(peliculaId = pelicula.id)
+                navController.navigate(accion)
+            }
+
             imageViewDetallePapelera.setOnClickListener{
                 AlertDialog.Builder(requireContext())
                     .setTitle("¿Borrar pelicula?")

@@ -43,5 +43,17 @@
         <action
             android:id="@+id/action_fragmentDetalle_to_fragmentListaPeliculas"
             app:destination="@id/fragmentListaPeliculas" />
+        <action
+            android:id="@+id/action_fragmentDetalle_to_fragmentCriticas"
+            app:destination="@id/fragmentCriticas" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCriticas"
+        android:name="com.example.app_ut4_03.vistas.FragmentCriticas"
+        android:label="fragment_criticas"
+        tools:layout="@layout/fragment_criticas" >
+        <argument
+            android:name="peliculaId"
+            app:argType="long" />
     </fragment>
 </navigation>

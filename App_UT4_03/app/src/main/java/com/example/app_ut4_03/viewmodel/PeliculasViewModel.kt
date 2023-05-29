@@ -10,7 +10,9 @@ import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.app_ut4_03.data.PeliculaRepository
 import com.example.app_ut4_03.data.database.PeliculaDatabase
+import com.example.app_ut4_03.modelo.Critica
 import com.example.app_ut4_03.modelo.Pelicula
+import com.example.app_ut4_03.modelo.PeliculaConCriticas
 import kotlinx.coroutines.launch
 
 class PeliculasViewModel (context: Context): ViewModel()
@@ -21,7 +23,8 @@ class PeliculasViewModel (context: Context): ViewModel()
 
     init{
         val peliculaDao= PeliculaDatabase.getDatabase(context).peliculaDao()
-        repositorio=PeliculaRepository(peliculaDao)
+        val criticaDao= PeliculaDatabase.getDatabase(context).criticaDao()
+        repositorio=PeliculaRepository(peliculaDao,criticaDao)
         peliculas=repositorio.get()
         peliculasFavoritas=repositorio.getFavoritas()
     }
@@ -43,6 +46,18 @@ class PeliculasViewModel (context: Context): ViewModel()
             repositorio.cambiarFavorita(peliculaId)
         }
     }
+
+    fun getCriticas(peliculaId: Long): LiveData<List<Critica>>
+    {
+        return repositorio.getCriticas(peliculaId)
+    }
+    fun insertarPeliculaConCriticas(pelicula: PeliculaConCriticas)
+    {
+        viewModelScope.launch {
+            repositorio.insertar(pelicula)
+        }
+    }
+
 
 
     companion object {

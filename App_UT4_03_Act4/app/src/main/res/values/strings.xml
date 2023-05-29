@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">App_UT4_03</string>
+
+    <string name="lista_pelis">Listado de peliculas</string>
+    <string name="inser_pelis">Insertar Pelicula</string>
+    <string name="infor">Informacion</string>
+
+    <string name="peliculas">Peliculas</string>
+    <string name="favoritas">Favoritas</string>
+
+    <string name="mejor_pelis">Mejores Peliculas</string>
+
+    <string name="titulo">Titulo de pelicula</string>
+    <string name="anho">Año de Pelicula</string>
+    <string name="director">Director/es</string>
+    <string name="puntos">Puntos de la pelicula</string>
+    <string name="url">URL de la imagen de la pelicula</string>
+    <string name="sinopsis">Sinopsis de una pelicula</string>
+
+    <string name="si">Si</string>
+    <string name="no">No</string>
+
+    <string name="insertar">Insertar</string>
+</resources>
